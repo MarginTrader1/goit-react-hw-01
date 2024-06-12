@@ -2,7 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./components/App/App";
 import Profile from "./components/Profile/Profile";
-import userData from "./components/userData";
+import FriendList from "./components/FriendList/FriendList";
+
+import userData from "../src/data/userData.json";
+import friends from "../src/data/friends.json";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -14,5 +17,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       image={userData.avatar}
       stats={userData.stats}
     />
+    <FriendList friends={friends} />
   </React.StrictMode>
 );
