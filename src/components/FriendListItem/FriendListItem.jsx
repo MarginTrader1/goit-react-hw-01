@@ -1,13 +1,11 @@
-const FriendListItem = ({ friends }) => {
-  console.log(friends);
-
-  return friends.map(({ avatar, name, isOnline, id }) => (
-    <li key={id}>
-      <img src={avatar} alt="Avatar" width="48" />
+const FriendListItem = ({ image, name, status }) => {
+  return (
+    <div>
+      <img src={image} alt="Avatar" width="48" />
       <p>{name}</p>
-      <p>{isOnline}</p>
-    </li>
-  ));
+      <p><p>{status ? <span>OnLine</span> : <span>OffLine</span>}</p></p>
+    </div>
+  );
 };
 
 export default FriendListItem;
