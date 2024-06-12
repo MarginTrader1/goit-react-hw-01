@@ -10,4 +10,6 @@ const userData = {
   },
 };
 
+console.log(userData.avatar);
+
 export default userData;

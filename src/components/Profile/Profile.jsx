@@ -1,16 +1,9 @@
-const Profile = ({
-  username,
-  tag,
-  location,
-  avatar,
-  stats: { followers, views, likes },
-}) => {
-  console.log(avatar);
-
+const Profile = ({ username, tag, location, image, stats }) => {
+  const { followers, views, likes } = stats;
   return (
     <div>
       <div>
-        <img src={avatar} alt="User avatar" />
+        <img src={image} alt="User avatar" />
         <p>{username}</p>
         <p>{tag}</p>
         <p>{location}</p>
