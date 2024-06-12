@@ -3,9 +3,11 @@ import ReactDOM from "react-dom/client";
 import App from "./components/App/App";
 import Profile from "./components/Profile/Profile";
 import FriendList from "./components/FriendList/FriendList";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 
 import userData from "../src/data/userData.json";
 import friends from "../src/data/friends.json";
+import transactions from "../src/data/transactions.json"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -18,5 +20,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       stats={userData.stats}
     />
     <FriendList friends={friends} />
+    <TransactionHistory items={transactions} />
   </React.StrictMode>
 );
