@@ -3,7 +3,7 @@ const FriendListItem = ({ image, name, status }) => {
     <div>
       <img src={image} alt="Avatar" width="48" />
       <p>{name}</p>
-      <p><p>{status ? <span>OnLine</span> : <span>OffLine</span>}</p></p>
+      {status ? <p>OnLine</p> : <p>OffLine</p>}
     </div>
   );
 };
