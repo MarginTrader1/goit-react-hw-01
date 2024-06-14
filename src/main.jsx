@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "modern-normalize";
+
 import App from "./components/App/App";
 import Profile from "./components/Profile/Profile";
 import FriendList from "./components/FriendList/FriendList";
@@ -7,7 +9,7 @@ import TransactionHistory from "./components/TransactionHistory/TransactionHisto
 
 import userData from "../src/data/userData.json";
 import friends from "../src/data/friends.json";
-import transactions from "../src/data/transactions.json"
+import transactions from "../src/data/transactions.json";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
