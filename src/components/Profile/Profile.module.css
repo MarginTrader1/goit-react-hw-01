@@ -1,43 +1,89 @@
-.profile {
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
+.card {
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 40px;
 
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  border: 1px solid #0000001c;
+   width: 400px;
+   border: 2px solid #1e1d1d;
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+.profile {
+   box-sizing: border-box;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(243, 245, 245);
 }
 
 .avatar {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-radius: 50%;
-  width: 200px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   background-color: rgb(63, 63, 63);
+   border-radius: 50%;
+}
+
+.avatarImage {
+   border-radius: 50%;
+   width: 200px;
 }
 
 .name {
-  font-size: 24px;
-  font-weight: bold;
+   font-size: 24px;
+   font-weight: bold;
 }
 
 .tag {
-  font-size: 18px;
-  color: gray;
+   font-size: 18px;
+   color: gray;
 }
 
 .location {
-  font-size: 18px;
-  color: gray;
-  margin-bottom: 20px;
+   font-size: 18px;
+   color: gray;
+   margin-bottom: 20px;
 }
 
 .list {
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
+   box-sizing: border-box;
+   width: auto;
+   margin-left: auto;
+   margin-right: auto;
 
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+   display: flex;
+   flex-direction: row;
+
+   border-top: 2px solid #696868;
+}
+
+.listItem {
+   width: calc(100% / 3);
+   padding-top: 10px;
+   padding-bottom: 10px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.list > .listItem:not(:last-child) {
+   border-right: 2px solid #696868;
+}
+
+.listItemName {
+   font-size: 24px;
+}
+
+.listItemCount {
+   font-size: 24px;
+   font-weight: bold;
 }
