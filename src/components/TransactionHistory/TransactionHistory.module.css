@@ -4,6 +4,8 @@ table {
    margin-right: auto;
    border-collapse: collapse;
    border: 2px solid black;
+
+   margin-bottom: 40px;
 }
 
 thead {
