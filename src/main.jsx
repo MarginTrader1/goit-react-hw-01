@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "modern-normalize";
-import "./index.css"
+
+import "modern-normalize"; // импорт библ модерн нормалайз
+import "./index.css" // импорт обнуленного css
 
 import App from "./components/App/App";
 import Profile from "./components/Profile/Profile";
