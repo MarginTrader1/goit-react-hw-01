@@ -3,6 +3,11 @@ table {
    margin-left: auto;
    margin-right: auto;
    border-collapse: collapse;
+   border: 2px solid black;
+}
+
+thead {
+    background-color: rgb(148, 147, 147);
 }
 
 tr {
@@ -11,10 +16,19 @@ tr {
 
 th {
    width: 200px;
+   border: 1px solid black;
 }
 
 .firstColumn {
    text-align: start;
    padding-left: 50px;
    text-transform: capitalize;
+}
+
+td {
+    border: 1px solid black;
+}
+
+tbody > :nth-child(even) {
+    background-color: rgb(202, 199, 199);
 }
